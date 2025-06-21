@@ -43,11 +43,3 @@ Vamshi Bandari
 📍 India
 🔗 GitHub Profile
 
-
-
-📌 Update the **theme** or **description** anytime if needed.
-
----
-
-✅ After pasting, press **Ctrl+S** to save it.  
-Then reply **“Done”**, and I’ll give you **step 3: Commit and push it to GitHub**.

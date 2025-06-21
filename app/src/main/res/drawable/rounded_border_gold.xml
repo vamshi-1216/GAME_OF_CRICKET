@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer gold border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFD700"/> <!-- Gold -->
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Inner black border -->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle"><!-- Black -->
+            <corners android:radius="10dp"/>
+            <stroke android:width="2dp" android:color="#000000"/> <!-- Gold stroke -->
+        </shape>
+    </item>
+
+    <!-- Innermost background fill -->
+    <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#2e2e2e"/> <!-- Your background -->
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+
+</layer-list>
