@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Peaky Blinders Button Style -->
+    <style name="PeakyButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/peaky_button_background</item>
+        <item name="android:textColor">#FFD700</item>
+        <item name="android:fontFamily">@font/got_font</item>
+        <item name="android:textSize">18sp</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+
+    <!-- Peaky Blinders Text Style -->
+    <style name="PeakyText">
+        <item name="android:textColor">#FFD700</item>
+        <item name="android:fontFamily">@font/got_font</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <!-- Peaky Blinders Tab Text Style -->
+    <style name="PeakyTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:fontFamily">@font/got_font</item>
+        <item name="android:textSize">16sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!-- Spinners Theme -->
+    <style name="SpinnerTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/got_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ScoringButtonGold">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:backgroundTint">@color/gold</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/got_font</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:background">@drawable/peaky_button_background</item>
+    </style>
+
+    <style name="ScoringButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:backgroundTint">#C0C0C0</item> <!-- Silver -->
+        <item name="android:textColor">#000000</item>     <!-- Black -->
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+</resources>

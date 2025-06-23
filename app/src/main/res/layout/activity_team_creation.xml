@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/peaky_background">
+
+    <LinearLayout
+        android:id="@+id/teamPickerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/teamSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="   Select Your Warriors"
+            android:fontFamily="@font/got_font"
+            android:textColor="@color/gold"
+            android:textSize="28sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choose your team or forge a new one"
+            android:textColor="@color/white"
+            android:fontFamily="@font/got_font"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+
+            />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/gold"
+            android:layout_marginBottom="4dp"
+            />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            app:tabTextColor="#CCCCCC"
+            app:tabSelectedTextColor="#FFD700"
+            app:tabIndicatorColor="#FFD700"
+            app:tabTextAppearance="@style/PeakyTabText"
+            app:tabMode="fixed"
+            app:tabGravity="fill" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

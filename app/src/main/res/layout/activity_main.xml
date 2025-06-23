@@ -1,22 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="@drawable/peaky_background"
+    android:padding="24dp">
 
-    <TextView
-        android:id="@+id/mainText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Game of Cricket!"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#111111"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        >
+    <!-- Main Logo View using Image view -->
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/goc_text"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Game of Cricket Logo"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:elevation="8dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/taglineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Cricket is Coming"
+            android:textSize="24sp"
+            android:fontFamily="@font/got_font"
+            android:textColor="#CCCCCC"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/peakyTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="48dp"
+            android:text="By Order of the Gully Cricket..."
+            android:textSize="18sp"
+            android:fontFamily="@font/got_font"
+            android:textColor="#AAAAAA"
+            android:textStyle="italic" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startMatchButton"
+            style="@style/PeakyButton"
+            android:text="Let the Battle Begin" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/manageTeamsButton"
+            style="@style/PeakyButton"
+            android:layout_marginTop="16dp"
+            android:text="Summon the Lords" />
+
+        <TextView
+            android:id="@+id/bottomQuote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Only men who stand, can win the game."
+            android:textSize="16sp"
+            android:textColor="#888888"
+            android:fontFamily="@font/got_font"
+            android:textStyle="italic" />
+    </LinearLayout>
+</RelativeLayout>

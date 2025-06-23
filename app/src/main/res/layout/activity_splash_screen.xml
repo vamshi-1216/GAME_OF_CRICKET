@@ -1,35 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/splashRoot"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#111111">
+    android:background="@android:color/black">
 
-    <!-- Logo -->
-    <ImageView
-        android:id="@+id/splashLogo"
-        android:layout_width="320dp"
-        android:layout_height="320dp"
-        android:src="@drawable/goc_text"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/splashText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp" />
-
-    <!-- App Name -->
-    <TextView
-        android:id="@+id/splashText"
+    <VideoView
+        android:id="@+id/splashVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GAME OF CRICKET"
-        android:textSize="28sp"
-        android:textColor="#F8D062"
-        android:fontFamily=""
-        app:layout_constraintTop_toBottomOf="@id/splashLogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
